@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boats for Sale | Lakeshore Marina, Celina Ohio</title>
+  <meta name="description" content="Browse new and used boats for sale at Lakeshore Marina on Grand Lake St. Marys in Celina, Ohio. Call for pricing, availability, and a showing." />
+  <meta property="og:title" content="Boats for Sale | Lakeshore Marina" />
+  <meta property="og:description" content="Shop current new and used boat inventory at Lakeshore Marina in Celina, Ohio." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="inventory-page">
+  <a class="skip-link" href="#inventory">Skip to inventory</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo-link" aria-label="Lakeshore Marina home">
+        <img src="logos/marina-logo.png" alt="Lakeshore Marina" class="logo-img" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="inventory.html" aria-current="page">Boats for Sale</a></li>
+          <li><a href="index.html#rentals">Rentals</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:4192682280" class="btn btn-primary">Call Us</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="inventory.html" aria-current="page">Boats for Sale</a></li>
+        <li><a href="index.html#rentals">Rentals</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="tel:4192682280" class="btn btn-primary mobile-cta">Call 419-268-2280</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inventory">
+    <section class="inventory-hero">
+      <div class="container inventory-hero-inner">
+        <div>
+          <p class="section-eyebrow">Current Inventory</p>
+          <h1>Find Your Next Boat</h1>
+          <p>Browse new and pre-owned boats available at Lakeshore Marina. Inventory changes often, so call us if you see one you want to take a closer look at.</p>
+        </div>
+        <a class="btn btn-ghost btn-lg" href="tel:4192682280">Call 419-268-2280</a>
+      </div>
+    </section>
+
+    <section class="inventory-section" aria-labelledby="inventory-heading">
+      <div class="container">
+        <div class="inventory-toolbar">
+          <div>
+            <p class="inventory-kicker">Boats available now</p>
+            <h2 id="inventory-heading">Inventory</h2>
+            <p class="inventory-count" id="inventory-count" aria-live="polite">Loading inventory…</p>
+          </div>
+          <div class="inventory-filters" aria-label="Inventory filters">
+            <label>
+              <span>Condition</span>
+              <select id="condition-filter">
+                <option value="all">All conditions</option>
+                <option value="New">New</option>
+                <option value="Pre-Owned">Pre-Owned</option>
+              </select>
+            </label>
+            <label>
+              <span>Brand</span>
+              <select id="brand-filter">
+                <option value="all">All brands</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="inventory-grid" id="inventory-grid" aria-live="polite"></div>
+
+        <div class="inventory-empty" id="inventory-empty" hidden>
+          <p class="inventory-empty-label">Inventory update in progress</p>
+          <h2>New listings are coming soon.</h2>
+          <p>Our available boats change frequently. Call Lakeshore Marina and we’ll tell you what is currently on the lot.</p>
+          <a class="btn btn-primary btn-lg" href="tel:4192682280">Call About Available Boats</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="inventory-help">
+      <div class="container inventory-help-inner">
+        <div>
+          <p class="section-eyebrow">Need help choosing?</p>
+          <h2>Talk with a local boat expert.</h2>
+          <p>Tell us how you spend your time on Grand Lake and we’ll help you compare the right models, layouts, and power options.</p>
+        </div>
+        <div class="inventory-help-actions">
+          <a class="btn btn-primary btn-lg" href="tel:4192682280">Call the Marina</a>
+          <a class="btn btn-outline btn-lg" href="https://www.facebook.com/lakeshoregrandlake/" target="_blank" rel="noopener noreferrer">Message on Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="boat-modal" id="boat-modal" aria-labelledby="boat-modal-title">
+    <button class="modal-close" id="modal-close" type="button" aria-label="Close boat details">×</button>
+    <div id="modal-content"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logos/marina-logo.png" alt="Lakeshore Marina" class="footer-logo-img" />
+        </div>
+        <p class="footer-tagline">Grand Lake's Bentley, Harris, Trifecta &amp; Dockside Dealer.<br>Celina, Ohio.</p>
+      </div>
+      <div class="footer-links-group">
+        <p class="footer-col-label">Quick Links</p>
+        <ul role="list">
+          <li><a href="inventory.html">Boats for Sale</a></li>
+          <li><a href="index.html#rentals">Rentals</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <p class="footer-col-label">Contact</p>
+        <ul role="list">
+          <li><a href="tel:4192682280">419-268-2280</a></li>
+          <li><a href="mailto:lakeshoremarinagrandlake@gmail.com">lakeshoremarinagrandlake@gmail.com</a></li>
+          <li><a href="https://maps.google.com/?q=7001+Cottonwood+Rd+Celina+OH+45822" target="_blank" rel="noopener noreferrer">7001 Cottonwood Rd, Celina OH 45822</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <p class="footer-col-label">Hours</p>
+        <ul role="list" class="footer-hours">
+          <li>Mon–Sat: 9:00 AM – 5:00 PM</li>
+          <li>Sunday: 12:00 PM – 3:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year"></span> Lakeshore Marina. All rights reserved. &mdash; 7001 Cottonwood Rd, Celina, OH 45822</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="inventory.js" defer></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', function (user) {
+        if (!user) {
+          window.netlifyIdentity.on('login', function () {
+            window.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

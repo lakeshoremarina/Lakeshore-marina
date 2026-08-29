@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+publish_mode: simple
+
+collections:
+  - name: "inventory"
+    label: "Boat Inventory"
+    files:
+      - name: "boats"
+        label: "Boats for Sale"
+        file: "data/boats.json"
+        format: "json"
+        fields:
+          - label: "Boat Listings"
+            name: "boats"
+            widget: "list"
+            summary: "{{fields.year}} {{fields.make}} {{fields.model}} — {{fields.status}}"
+            fields:
+              - { label: "Listing Title", name: "title", widget: "string", hint: "Example: 2024 Bentley Legacy 223" }
+              - { label: "Year", name: "year", widget: "number", value_type: "int", min: 1950, max: 2100 }
+              - { label: "Make / Brand", name: "make", widget: "string", hint: "Example: Bentley" }
+              - { label: "Model", name: "model", widget: "string" }
+              - { label: "Condition", name: "condition", widget: "select", options: ["New", "Pre-Owned"] }
+              - { label: "Status", name: "status", widget: "select", options: ["Available", "Sale Pending", "Sold"], default: "Available" }
+              - { label: "Price", name: "price", widget: "number", value_type: "int", required: false, hint: "Leave blank to show Call for price" }
+              - { label: "Length", name: "length", widget: "string", required: false, hint: "Example: 22 ft 3 in" }
+              - { label: "Engine", name: "engine", widget: "string", required: false, hint: "Example: Mercury 150 HP" }
+              - { label: "Engine Hours", name: "hours", widget: "string", required: false }
+              - { label: "Stock Number", name: "stock_number", widget: "string", required: false }
+              - { label: "Main Photo", name: "cover_image", widget: "image", required: false }
+              - label: "Additional Photos"
+                name: "gallery"
+                widget: "list"
+                required: false
+                field: { label: "Photo", name: "photo", widget: "image" }
+              - { label: "Description", name: "description", widget: "text", required: false }
