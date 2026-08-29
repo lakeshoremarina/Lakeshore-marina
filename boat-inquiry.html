@@ -61,11 +61,18 @@
         </div>
 
         <div class="inquiry-form-card">
-          <form class="boat-inquiry-form" action="https://formsubmit.co/lakeshoremarinagrandlake@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New Boat Inquiry from Lakeshore Marina Website" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://lakeshore-marina-inventory.pplx.app/thank-you" />
-            <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <form
+            class="boat-inquiry-form"
+            name="boat-inquiry"
+            action="/thank-you.html"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="boat-inquiry" />
+            <p class="form-honeypot" aria-hidden="true">
+              <label>Do not fill this out: <input name="bot-field" type="text" tabindex="-1" autocomplete="off" /></label>
+            </p>
 
             <div class="form-row-group">
               <div class="form-row">
@@ -146,7 +153,7 @@
             </label>
 
             <button class="btn btn-primary btn-lg btn-full" type="submit">Send Inquiry to Lakeshore Marina</button>
-            <p class="form-privacy">Your information is used only to respond to this inquiry. Form delivery is securely processed by FormSubmit.</p>
+            <p class="form-privacy">Your information is used only to respond to this inquiry. Form submissions are securely processed through Netlify.</p>
           </form>
         </div>
       </div>

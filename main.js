@@ -49,23 +49,3 @@ if (stickyCta && hero && contact) {
   window.addEventListener('resize', updateSticky);
   updateSticky();
 }
-
-// Contact form
-const form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Message Sent!';
-    btn.disabled = true;
-    btn.style.background = '#22c55e';
-    btn.style.borderColor = '#22c55e';
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-      btn.style.background = '';
-      btn.style.borderColor = '';
-      form.reset();
-    }, 4000);
-  });
-}
