@@ -54,20 +54,17 @@
     <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <div class="hero-boat-grid" aria-hidden="true">
-          <figure class="hero-boat-shot hero-boat-shot--bentley">
-            <img src="images/hero-bentley-boat.webp" alt="" fetchpriority="high" decoding="async" />
-          </figure>
-          <figure class="hero-boat-shot hero-boat-shot--harris">
-            <img src="images/hero-harris-boat.jpg" alt="" decoding="async" />
-          </figure>
-          <figure class="hero-boat-shot hero-boat-shot--trifecta">
-            <img src="images/hero-trifecta-water.webp" alt="" decoding="async" />
-          </figure>
-          <figure class="hero-boat-shot hero-boat-shot--dockside">
-            <img src="images/hero-dockside-running.jpg" alt="" decoding="async" />
-          </figure>
-        </div>
+        <picture class="hero-boat-collage" aria-hidden="true">
+          <source media="(max-width: 768px)" srcset="images/hero-boats-blended-mobile.webp" />
+          <img
+            src="images/hero-boats-blended.webp"
+            alt=""
+            width="1920"
+            height="1080"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
       </div>
       <div class="container hero-content">
         <div class="hero-eyebrow">

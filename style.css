@@ -189,33 +189,18 @@ select, input, textarea { font-family: inherit; }
   contain: paint;
   background: #092a45;
 }
-.hero-boat-grid {
+.hero-boat-collage {
   position: absolute;
   inset: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  display: block;
 }
-.hero-boat-shot {
-  position: relative;
-  min-width: 0;
-  min-height: 0;
-  margin: 0;
-  overflow: hidden;
-}
-.hero-boat-shot img {
+.hero-boat-collage img {
   display: block;
   width: 100%;
   height: 100%;
   max-width: none;
   object-fit: cover;
-}
-.hero-boat-shot--bentley img { object-position: 50% 61%; }
-.hero-boat-shot--harris img { object-position: 50% 58%; }
-.hero-boat-shot--trifecta img { object-position: 54% 58%; }
-.hero-boat-shot--dockside img {
-  object-position: 50% 50%;
-  transform: none;
+  object-position: center;
 }
 .hero-content {
   position: relative; z-index: 1;
@@ -976,13 +961,7 @@ select, input, textarea { font-family: inherit; }
   .header-actions .btn-primary { display: none; }
   :root { --section-pad: 4rem; }
   .hero-content { padding: 3.5rem 1.5rem 5rem; }
-  .hero-boat-shot--bentley img { object-position: 55% 60%; }
-  .hero-boat-shot--harris img { object-position: 46% 55%; }
-  .hero-boat-shot--trifecta img { object-position: 48% 58%; }
-  .hero-boat-shot--dockside img {
-    object-position: 50% 50%;
-    transform: none;
-  }
+  .hero-boat-collage img { object-position: center; }
   .proof-inner { gap: 0.5rem; }
   .proof-item { padding: 0 0.75rem; }
   .proof-divider { display: none; }
