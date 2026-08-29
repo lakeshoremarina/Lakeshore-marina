@@ -23,6 +23,8 @@
 /* ── RESET ────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+html,
+body { overflow-x: hidden; }
 body {
   font-family: var(--font-body);
   background: var(--bg);
@@ -185,61 +187,41 @@ select, input, textarea { font-family: inherit; }
   position: absolute; inset: 0; z-index: 0;
   overflow: hidden;
   contain: paint;
-  background: linear-gradient(145deg, #002f60 0%, #00579b 52%, #006eb8 100%);
+  background: #092a45;
 }
-.hero-brand-wall {
+.hero-boat-grid {
   position: absolute;
-  inset: 0 0 0 42%;
+  inset: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  transform: rotate(-4deg) scale(1.12);
-  transform-origin: center;
-  opacity: 0.92;
 }
-.hero-brand-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero-boat-shot {
+  position: relative;
   min-width: 0;
-  padding: clamp(2rem, 5vw, 5rem);
-  border-left: 1px solid rgba(255,255,255,0.13);
-  border-bottom: 1px solid rgba(255,255,255,0.13);
-  background: rgba(255,255,255,0.055);
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
 }
-.hero-brand-mark:nth-child(2),
-.hero-brand-mark:nth-child(3) {
-  background: rgba(0,20,55,0.10);
-}
-.hero-brand-mark img {
+.hero-boat-shot img {
   display: block;
   width: 100%;
-  max-width: 320px;
-  max-height: 155px;
-  object-fit: contain;
-  opacity: 1;
-  filter: grayscale(1) brightness(0) invert(1) drop-shadow(0 2px 10px rgba(255,255,255,0.12));
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
 }
-.hero-brand-mark--harris img {
-  max-width: 215px;
-  max-height: 185px;
-}
-.hero-overlay {
-  position: absolute; inset: 0;
-  background:
-    linear-gradient(90deg, rgba(0,40,82,0.98) 0%, rgba(0,56,105,0.90) 36%, rgba(0,64,114,0.34) 70%, rgba(0,50,92,0.18) 100%),
-    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(245,124,0,0.16) 0%, transparent 65%);
-}
-.hero-water-shimmer {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 220px;
-  background: linear-gradient(to top, rgba(0,30,80,0.35), transparent);
+.hero-boat-shot--bentley img { object-position: 50% 61%; }
+.hero-boat-shot--harris img { object-position: 50% 58%; }
+.hero-boat-shot--trifecta img { object-position: 54% 58%; }
+.hero-boat-shot--dockside img {
+  object-position: 50% 50%;
+  transform: none;
 }
 .hero-content {
   position: relative; z-index: 1;
   padding: 5rem 1.5rem 6rem;
-  max-width: 750px;
+  width: 100%;
+  max-width: var(--container);
 }
 .hero-eyebrow {
   display: inline-flex;
@@ -249,8 +231,9 @@ select, input, textarea { font-family: inherit; }
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.85);
+  color: #fff;
   margin-bottom: 1.5rem;
+  text-shadow: 0 2px 5px rgba(0,20,42,0.95), 0 0 18px rgba(0,20,42,0.9);
 }
 .eyebrow-dot {
   width: 8px; height: 8px;
@@ -270,16 +253,39 @@ select, input, textarea { font-family: inherit; }
   letter-spacing: -0.02em;
   color: #fff;
   margin-bottom: 1.25rem;
+  -webkit-text-stroke: 1px rgba(0,24,48,0.55);
+  text-shadow: 0 3px 6px rgba(0,20,42,0.95), 0 0 26px rgba(0,20,42,0.9);
 }
-.hero-accent { color: var(--orange); }
+.hero-accent {
+  color: var(--orange);
+  -webkit-text-stroke-color: rgba(72,28,0,0.5);
+}
 .hero-sub {
   font-size: 1.15rem;
-  color: rgba(255,255,255,0.80);
+  color: #fff;
   line-height: 1.65;
   margin-bottom: 2rem;
-  max-width: 580px;
+  max-width: 520px;
+  font-weight: 600;
+  text-shadow: 0 2px 5px rgba(0,20,42,0.98), 0 0 18px rgba(0,20,42,0.95);
 }
-.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.hero .btn-ghost {
+  background: #fff;
+  color: #0d1f35;
+  border-color: #fff;
+  box-shadow: 0 3px 12px rgba(0,20,42,0.25);
+}
+.hero .btn-ghost:hover {
+  background: #eef5fb;
+  border-color: #eef5fb;
+}
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-shadow: none;
+}
 .hero-trust {
   display: flex;
   flex-wrap: wrap;
@@ -291,7 +297,8 @@ select, input, textarea { font-family: inherit; }
   gap: 0.4rem;
   font-size: 0.88rem;
   font-weight: 600;
-  color: rgba(255,255,255,0.75);
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0,20,42,0.98), 0 0 16px rgba(0,20,42,0.95);
 }
 .trust-icon { color: var(--orange); font-weight: 700; }
 .hero-scroll-hint {
@@ -969,23 +976,12 @@ select, input, textarea { font-family: inherit; }
   .header-actions .btn-primary { display: none; }
   :root { --section-pad: 4rem; }
   .hero-content { padding: 3.5rem 1.5rem 5rem; }
-  .hero-brand-wall {
-    inset: 0;
+  .hero-boat-shot--bentley img { object-position: 55% 60%; }
+  .hero-boat-shot--harris img { object-position: 46% 55%; }
+  .hero-boat-shot--trifecta img { object-position: 48% 58%; }
+  .hero-boat-shot--dockside img {
+    object-position: 50% 50%;
     transform: none;
-    opacity: 0.68;
-  }
-  .hero-brand-mark {
-    padding: 1.35rem;
-    border-color: rgba(255,255,255,0.12);
-  }
-  .hero-brand-mark img {
-    max-height: 100px;
-    opacity: 1;
-  }
-  .hero-overlay {
-    background:
-      linear-gradient(180deg, rgba(0,48,94,0.78) 0%, rgba(0,65,118,0.91) 52%, rgba(0,67,121,0.98) 100%),
-      radial-gradient(ellipse 80% 60% at 60% 40%, rgba(245,124,0,0.12) 0%, transparent 65%);
   }
   .proof-inner { gap: 0.5rem; }
   .proof-item { padding: 0 0.75rem; }
