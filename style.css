@@ -226,7 +226,7 @@ select, input, textarea { font-family: inherit; }
   font-size: clamp(3rem, 7vw, 5.5rem);
   font-weight: 900;
   line-height: 1.0;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   color: #fff;
   margin-bottom: 1.25rem;
 }
@@ -993,7 +993,7 @@ select, input, textarea { font-family: inherit; }
   font-size: clamp(3rem, 7vw, 5rem);
   font-weight: 900;
   line-height: 0.98;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   margin-bottom: 1.25rem;
 }
 .inventory-hero p:not(.section-eyebrow) {
