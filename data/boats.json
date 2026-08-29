@@ -1,3 +1,15 @@
 {
-  "boats": []
+  "boats": [
+    {
+      "model": "Test model",
+      "make": "Trifecta",
+      "stock_number": "Test 001",
+      "status": "Available",
+      "cover_image": "/uploads/img_1984.jpeg",
+      "title": "Test Boat",
+      "condition": "New",
+      "description": "Test",
+      "year": 2026
+    }
+  ]
 }
