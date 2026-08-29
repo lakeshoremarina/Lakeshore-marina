@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build Your Boat | Lakeshore Marina</title>
+  <meta name="description" content="Choose Bentley, Trifecta, or Harris and customize your ideal pontoon boat. Send your completed build to Lakeshore Marina in Celina, Ohio." />
+  <meta property="og:title" content="Build Your Boat | Lakeshore Marina" />
+  <meta property="og:description" content="Customize a Bentley, Trifecta, or Harris pontoon and send your build to Lakeshore Marina." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="build-page">
+  <a class="skip-link" href="#build-options">Skip to boat builders</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo-link" aria-label="Lakeshore Marina home">
+        <img src="logos/marina-logo.png" alt="Lakeshore Marina" class="logo-img" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="inventory.html">Boats for Sale</a></li>
+          <li><a href="build-your-boat.html" aria-current="page">Build Your Boat</a></li>
+          <li><a href="index.html#rentals">Rentals</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="boat-inquiry.html" class="btn btn-primary">Boat Inquiry</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="inventory.html">Boats for Sale</a></li>
+        <li><a href="build-your-boat.html" aria-current="page">Build Your Boat</a></li>
+        <li><a href="boat-inquiry.html">Boat Inquiry</a></li>
+        <li><a href="index.html#rentals">Rentals</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="build-options">
+    <section class="builder-hero">
+      <div class="container builder-hero-content">
+        <p class="section-eyebrow">Built around your time on the water</p>
+        <h1>Choose Your Brand.<br>Build Your Boat.</h1>
+        <p>Start with the manufacturer you want, choose your model, colors, motor, layout, and options, then send your completed build to Lakeshore Marina for pricing and availability.</p>
+        <a href="#brands" class="btn btn-primary btn-lg">Choose a Brand</a>
+      </div>
+    </section>
+
+    <section class="builder-steps" aria-labelledby="how-it-works">
+      <div class="container">
+        <div class="builder-section-heading">
+          <p class="section-eyebrow">How it works</p>
+          <h2 id="how-it-works">From idea to the water</h2>
+        </div>
+        <ol class="builder-step-list">
+          <li>
+            <span class="step-number">01</span>
+            <div><h3>Choose your brand</h3><p>Select Bentley, Trifecta, or Harris below.</p></div>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <div><h3>Customize your boat</h3><p>Use the official builder to choose the model, layout, colors, motor, and options.</p></div>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <div><h3>Send it to Lakeshore</h3><p>Return to our inquiry form and share the build link, code, or the details you selected.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="builder-brands" id="brands" aria-labelledby="choose-brand">
+      <div class="container">
+        <div class="builder-section-heading">
+          <p class="section-eyebrow">Official manufacturer builders</p>
+          <h2 id="choose-brand">Which boat do you want to build?</h2>
+          <p>Each button opens the manufacturer’s official customization tool in a new tab.</p>
+        </div>
+
+        <div class="builder-brand-list">
+          <article class="builder-brand-card" id="bentley">
+            <div class="builder-brand-logo">
+              <img src="logos/bentley-logo.png" alt="Bentley Pontoons" />
+            </div>
+            <div class="builder-brand-copy">
+              <p class="builder-brand-label">Luxury and performance</p>
+              <h3>Build a Bentley</h3>
+              <p>Choose your Bentley series, floorplan, colors, motor, and available options using Bentley’s official boat builder.</p>
+              <div class="builder-brand-actions">
+                <a class="btn btn-primary btn-lg" href="https://build.bentleypontoons.com/order" target="_blank" rel="noopener noreferrer">Open Bentley Builder</a>
+                <a class="btn btn-outline btn-lg" href="boat-inquiry.html#brand=Bentley">Send a Bentley Inquiry</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="builder-brand-card" id="trifecta">
+            <div class="builder-brand-logo">
+              <img src="logos/trifecta-logo.png" alt="Trifecta Pontoons" />
+            </div>
+            <div class="builder-brand-copy">
+              <p class="builder-brand-label">Versatile and family-ready</p>
+              <h3>Build a Trifecta</h3>
+              <p>Compare Trifecta series and models, then build the floorplan, finish, performance package, and features you want.</p>
+              <div class="builder-brand-actions">
+                <a class="btn btn-primary btn-lg" href="https://www.trifectapontoon.com/all-boats" target="_blank" rel="noopener noreferrer">Open Trifecta Builder</a>
+                <a class="btn btn-outline btn-lg" href="boat-inquiry.html#brand=Trifecta">Send a Trifecta Inquiry</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="builder-brand-card" id="harris">
+            <div class="builder-brand-logo">
+              <img src="logos/harris-logo.png" alt="Harris Pontoons" />
+            </div>
+            <div class="builder-brand-copy">
+              <p class="builder-brand-label">Premium comfort and craftsmanship</p>
+              <h3>Build a Harris</h3>
+              <p>Explore Harris models and customize the color, floorplan, engine, performance package, and onboard features.</p>
+              <div class="builder-brand-actions">
+                <a class="btn btn-primary btn-lg" href="https://www.harrisboats.com/us/en/build-and-price" target="_blank" rel="noopener noreferrer">Open Harris Builder</a>
+                <a class="btn btn-outline btn-lg" href="boat-inquiry.html#brand=Harris">Send a Harris Inquiry</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="builder-return-note">
+          <div>
+            <p class="section-eyebrow">Finished customizing?</p>
+            <h2>Send your build to the marina.</h2>
+            <p>Copy the configuration link or note the model and options you chose. Lakeshore Marina will review it and follow up about pricing, availability, and next steps.</p>
+          </div>
+          <a class="btn btn-primary btn-lg" href="boat-inquiry.html">Start Boat Inquiry</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap"><img src="logos/marina-logo.png" alt="Lakeshore Marina" class="footer-logo-img" /></div>
+        <p class="footer-tagline">Grand Lake's Bentley, Harris, Trifecta &amp; Dockside Dealer.<br>Celina, Ohio.</p>
+      </div>
+      <div class="footer-links-group">
+        <p class="footer-col-label">Quick Links</p>
+        <ul role="list">
+          <li><a href="inventory.html">Boats for Sale</a></li>
+          <li><a href="build-your-boat.html">Build Your Boat</a></li>
+          <li><a href="boat-inquiry.html">Boat Inquiry</a></li>
+          <li><a href="index.html#services">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <p class="footer-col-label">Contact</p>
+        <ul role="list">
+          <li><a href="tel:4192682280">419-268-2280</a></li>
+          <li><a href="mailto:lakeshoremarinagrandlake@gmail.com">lakeshoremarinagrandlake@gmail.com</a></li>
+          <li><a href="https://maps.google.com/?q=7001+Cottonwood+Rd+Celina+OH+45822" target="_blank" rel="noopener noreferrer">7001 Cottonwood Rd, Celina OH 45822</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <p class="footer-col-label">Hours</p>
+        <ul role="list" class="footer-hours">
+          <li>Mon–Sat: 9:00 AM – 5:00 PM</li>
+          <li>Sunday: 12:00 PM – 3:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container"><p>&copy; <span id="year"></span> Lakeshore Marina. All rights reserved.</p></div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

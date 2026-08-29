@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boat Inquiry | Lakeshore Marina</title>
+  <meta name="description" content="Send your custom boat build or new boat questions to Lakeshore Marina in Celina, Ohio." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="inquiry-page">
+  <a class="skip-link" href="#boat-inquiry">Skip to inquiry form</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo-link" aria-label="Lakeshore Marina home">
+        <img src="logos/marina-logo.png" alt="Lakeshore Marina" class="logo-img" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="inventory.html">Boats for Sale</a></li>
+          <li><a href="build-your-boat.html">Build Your Boat</a></li>
+          <li><a href="boat-inquiry.html" aria-current="page">Boat Inquiry</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:4192682280" class="btn btn-primary">Call Us</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="inventory.html">Boats for Sale</a></li>
+        <li><a href="build-your-boat.html">Build Your Boat</a></li>
+        <li><a href="boat-inquiry.html" aria-current="page">Boat Inquiry</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="boat-inquiry">
+    <section class="inquiry-shell">
+      <div class="container inquiry-layout">
+        <div class="inquiry-intro">
+          <p class="section-eyebrow">Boat inquiry</p>
+          <h1>Tell Us What You Want to Build</h1>
+          <p>Send us your preferred brand, model, options, or configuration link. The Lakeshore Marina team will review your request and contact you about pricing and availability.</p>
+          <div class="inquiry-contact-card">
+            <p class="inquiry-contact-label">Prefer to talk now?</p>
+            <a href="tel:4192682280">419-268-2280</a>
+            <span>7001 Cottonwood Rd, Celina, Ohio</span>
+          </div>
+        </div>
+
+        <div class="inquiry-form-card">
+          <form class="boat-inquiry-form" action="https://formsubmit.co/lakeshoremarinagrandlake@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Boat Inquiry from Lakeshore Marina Website" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://lakeshore-marina-inventory.pplx.app/thank-you" />
+            <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="first-name">First name</label>
+                <input id="first-name" name="First name" type="text" autocomplete="given-name" required />
+              </div>
+              <div class="form-row">
+                <label for="last-name">Last name</label>
+                <input id="last-name" name="Last name" type="text" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="Email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone</label>
+                <input id="phone" name="Phone" type="tel" autocomplete="tel" required />
+              </div>
+            </div>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="brand">Boat brand</label>
+                <select id="brand" name="Boat brand" required>
+                  <option value="">Select a brand</option>
+                  <option value="Bentley">Bentley</option>
+                  <option value="Trifecta">Trifecta</option>
+                  <option value="Harris">Harris</option>
+                  <option value="Dockside">Dockside</option>
+                  <option value="Not sure">Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="model">Model or series</label>
+                <input id="model" name="Model or series" type="text" placeholder="Example: Cruiser 230" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="configuration">Configuration link or build code</label>
+              <input id="configuration" name="Configuration link or build code" type="text" placeholder="Paste the builder link or code here" />
+              <span class="field-help">If the manufacturer gives you a share link or build number, place it here.</span>
+            </div>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="timeline">Purchase timeline</label>
+                <select id="timeline" name="Purchase timeline">
+                  <option value="">Select a timeframe</option>
+                  <option value="As soon as possible">As soon as possible</option>
+                  <option value="Within 30 days">Within 30 days</option>
+                  <option value="1–3 months">1–3 months</option>
+                  <option value="3–6 months">3–6 months</option>
+                  <option value="Just researching">Just researching</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="contact-method">Preferred contact</label>
+                <select id="contact-method" name="Preferred contact method">
+                  <option value="Phone">Phone</option>
+                  <option value="Email">Email</option>
+                  <option value="Text message">Text message</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="details">Options and questions</label>
+              <textarea id="details" name="Options and questions" rows="6" placeholder="Tell us about the colors, layout, motor, options, trade-in, financing questions, or anything else you want included."></textarea>
+            </div>
+
+            <label class="consent-row">
+              <input type="checkbox" name="Permission to contact" value="Yes" required />
+              <span>I agree that Lakeshore Marina may contact me about this boat inquiry.</span>
+            </label>
+
+            <button class="btn btn-primary btn-lg btn-full" type="submit">Send Inquiry to Lakeshore Marina</button>
+            <p class="form-privacy">Your information is used only to respond to this inquiry. Form delivery is securely processed by FormSubmit.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom container"><p>&copy; <span id="year"></span> Lakeshore Marina. All rights reserved.</p></div>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="inquiry.js" defer></script>
+</body>
+</html>
