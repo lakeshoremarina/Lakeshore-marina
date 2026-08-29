@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pontoon Rental Inquiry | Lakeshore Marina</title>
+  <meta name="description" content="Request a full-day or overnight pontoon rental from Lakeshore Marina on Grand Lake in Celina, Ohio." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="inquiry-page">
+  <a class="skip-link" href="#rental-inquiry">Skip to rental inquiry form</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo-link" aria-label="Lakeshore Marina home">
+        <img src="logos/marina-logo.png" alt="Lakeshore Marina" class="logo-img" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="inventory.html">Boats for Sale</a></li>
+          <li><a href="build-your-boat.html">Build Your Boat</a></li>
+          <li><a href="index.html#rentals" aria-current="page">Rentals</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:4192682280" class="btn btn-primary">Call Us</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <ul role="list">
+        <li><a href="inventory.html">Boats for Sale</a></li>
+        <li><a href="build-your-boat.html">Build Your Boat</a></li>
+        <li><a href="index.html#rentals" aria-current="page">Rentals</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="rental-inquiry">
+    <section class="inquiry-shell">
+      <div class="container inquiry-layout">
+        <div class="inquiry-intro">
+          <p class="section-eyebrow">Pontoon rental request</p>
+          <h1>Plan Your Day on Grand Lake</h1>
+          <p>Tell us which rental you want and when you would like to visit. The Lakeshore Marina team will confirm availability and complete your reservation with you.</p>
+          <div class="inquiry-contact-card">
+            <p class="inquiry-contact-label">Prefer to reserve by phone?</p>
+            <a href="tel:4192682280">419-268-2280</a>
+            <span>7001 Cottonwood Rd, Celina, Ohio</span>
+          </div>
+        </div>
+
+        <div class="inquiry-form-card">
+          <form
+            class="boat-inquiry-form"
+            name="rental-inquiry"
+            action="/rental-thank-you.html"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="rental-inquiry" />
+            <input type="hidden" name="Inquiry type" value="Pontoon rental" />
+            <p class="form-honeypot" aria-hidden="true">
+              <label>Do not fill this out: <input name="bot-field" type="text" tabindex="-1" autocomplete="off" /></label>
+            </p>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="rental-first-name">First name</label>
+                <input id="rental-first-name" name="First name" type="text" autocomplete="given-name" required />
+              </div>
+              <div class="form-row">
+                <label for="rental-last-name">Last name</label>
+                <input id="rental-last-name" name="Last name" type="text" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="rental-email">Email</label>
+                <input id="rental-email" name="Email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-row">
+                <label for="rental-phone">Phone</label>
+                <input id="rental-phone" name="Phone" type="tel" autocomplete="tel" required />
+              </div>
+            </div>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="rental-type">Rental type</label>
+                <select id="rental-type" name="Rental type" required>
+                  <option value="">Choose a rental</option>
+                  <option value="Full Day">Full Day — $275 plus tax</option>
+                  <option value="Overnight">Overnight — $350 plus tax</option>
+                  <option value="Not sure">Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="party-size">Number of guests</label>
+                <input id="party-size" name="Number of guests" type="number" min="1" max="12" inputmode="numeric" required />
+              </div>
+            </div>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="requested-date">Requested date</label>
+                <input id="requested-date" name="Requested date" type="date" required />
+              </div>
+              <div class="form-row">
+                <label for="alternate-date">Alternate date</label>
+                <input id="alternate-date" name="Alternate date" type="date" />
+              </div>
+            </div>
+
+            <div class="form-row-group">
+              <div class="form-row">
+                <label for="tube-addon">Tube add-on</label>
+                <select id="tube-addon" name="Tube add-on">
+                  <option value="No">No tube</option>
+                  <option value="Yes">Yes — add for $25</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="rental-contact-method">Preferred contact</label>
+                <select id="rental-contact-method" name="Preferred contact method">
+                  <option value="Phone">Phone</option>
+                  <option value="Email">Email</option>
+                  <option value="Text message">Text message</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="rental-details">Questions or special requests</label>
+              <textarea id="rental-details" name="Questions or special requests" rows="5" placeholder="Tell us about your plans or anything else the marina should know."></textarea>
+            </div>
+
+            <label class="consent-row">
+              <input type="checkbox" name="Permission to contact" value="Yes" required />
+              <span>I agree that Lakeshore Marina may contact me about this rental request.</span>
+            </label>
+
+            <button class="btn btn-primary btn-lg btn-full" type="submit">Send Rental Request</button>
+            <p class="form-privacy">Submitting this form requests availability and does not confirm a reservation. Lakeshore Marina will contact you to finalize your rental. Form submissions are securely processed through Netlify.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom container"><p>&copy; <span id="year"></span> Lakeshore Marina. All rights reserved.</p></div>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="rental-inquiry.js" defer></script>
+</body>
+</html>
