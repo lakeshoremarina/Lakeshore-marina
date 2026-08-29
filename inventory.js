@@ -75,13 +75,17 @@ function openBoat(boat) {
   if (boat.description) details.appendChild(makeElement('p', 'boat-description', boat.description));
 
   const actions = makeElement('div', 'boat-modal-actions');
-  const call = makeElement('a', 'btn btn-primary btn-lg', 'Call About This Boat');
+  const inquiry = makeElement('a', 'btn btn-primary btn-lg', 'Inquire About This Boat');
+  const inquiryParams = new URLSearchParams();
+  if (boat.make) inquiryParams.set('brand', boat.make);
+  if (boat.model) inquiryParams.set('model', boat.model);
+  if (boat.stock_number) inquiryParams.set('stock', boat.stock_number);
+  inquiryParams.set('boat', boat.title || [boat.year, boat.make, boat.model].filter(Boolean).join(' '));
+  inquiry.href = `boat-inquiry.html#${inquiryParams.toString()}`;
+
+  const call = makeElement('a', 'btn btn-outline btn-lg', 'Call About This Boat');
   call.href = 'tel:4192682280';
-  const facebook = makeElement('a', 'btn btn-outline btn-lg', 'Message on Facebook');
-  facebook.href = 'https://www.facebook.com/lakeshoregrandlake/';
-  facebook.target = '_blank';
-  facebook.rel = 'noopener noreferrer';
-  actions.append(call, facebook);
+  actions.append(inquiry, call);
   details.appendChild(actions);
 
   modalContent.append(gallery, details);

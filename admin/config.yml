@@ -5,6 +5,9 @@ backend:
 media_folder: "uploads"
 public_folder: "/uploads"
 publish_mode: simple
+site_url: "https://lakeshoremarina.org"
+display_url: "https://lakeshoremarina.org"
+logo_url: "/logos/marina-logo.png"
 
 collections:
   - name: "inventory"
@@ -22,7 +25,7 @@ collections:
             fields:
               - { label: "Listing Title", name: "title", widget: "string", hint: "Example: 2024 Bentley Legacy 223" }
               - { label: "Year", name: "year", widget: "number", value_type: "int", min: 1950, max: 2100 }
-              - { label: "Make / Brand", name: "make", widget: "string", hint: "Example: Bentley" }
+              - { label: "Make / Brand", name: "make", widget: "select", options: ["Bentley", "Harris", "Trifecta", "Dockside", "Other"] }
               - { label: "Model", name: "model", widget: "string" }
               - { label: "Condition", name: "condition", widget: "select", options: ["New", "Pre-Owned"] }
               - { label: "Status", name: "status", widget: "select", options: ["Available", "Sale Pending", "Sold"], default: "Available" }
@@ -31,10 +34,11 @@ collections:
               - { label: "Engine", name: "engine", widget: "string", required: false, hint: "Example: Mercury 150 HP" }
               - { label: "Engine Hours", name: "hours", widget: "string", required: false }
               - { label: "Stock Number", name: "stock_number", widget: "string", required: false }
-              - { label: "Main Photo", name: "cover_image", widget: "image", required: false }
+              - { label: "Main Photo", name: "cover_image", widget: "image", required: true, hint: "This is the photo customers see first. On a phone, choose Camera or Photo Library." }
               - label: "Additional Photos"
                 name: "gallery"
                 widget: "list"
                 required: false
+                hint: "Add as many detail photos as needed."
                 field: { label: "Photo", name: "photo", widget: "image" }
               - { label: "Description", name: "description", widget: "text", required: false }
