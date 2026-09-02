@@ -1,3 +1,25 @@
 {
-  "boats": []
+  "boats": [
+    {
+      "engine": "150 hp",
+      "price": 34995,
+      "model": "Bolt",
+      "make": "Bentley",
+      "gallery": [
+        "/uploads/img_3036.jpeg",
+        "/uploads/img_3037.jpeg",
+        "/uploads/img_3038.jpeg",
+        "/uploads/img_3039.jpeg",
+        "/uploads/img_3040.jpeg",
+        "/uploads/img_3041.jpeg",
+        "/uploads/img_3042.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_3035.jpeg",
+      "title": "2025 Bentley Bolt ",
+      "condition": "Pre-Owned",
+      "description": "This lake ready Bentley was only used for one year and is ready to get back on the water. \nCome see it today!",
+      "year": 2025
+    }
+  ]
 }
