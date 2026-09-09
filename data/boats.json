@@ -38,6 +38,28 @@
         "/uploads/img_3051.jpeg",
         "/uploads/img_3052.jpeg"
       ]
+    },
+    {
+      "engine": "115",
+      "price": 29995,
+      "model": "Fishing Edition",
+      "gallery": [
+        "/uploads/img_3025.jpeg",
+        "/uploads/img_3026.jpeg",
+        "/uploads/img_3027.jpeg",
+        "/uploads/img_3028.jpeg",
+        "/uploads/img_3029.jpeg",
+        "/uploads/img_3030.jpeg",
+        "/uploads/img_3031.jpeg",
+        "/uploads/img_3032.jpeg",
+        "/uploads/img_3033.jpeg",
+        "/uploads/img_3034.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_3025.jpeg",
+      "title": "2021 Sylvan Mirage Fishing Edition with trailer",
+      "condition": "Pre-Owned",
+      "year": 2021
     }
   ]
 }
