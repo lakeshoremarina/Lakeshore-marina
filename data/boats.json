@@ -117,6 +117,24 @@
       "title": "2019 Sea Doo Trixx Jet Skis",
       "condition": "Pre-Owned",
       "year": 2019
+    },
+    {
+      "price": 7500,
+      "model": "Sea Doo Utopia",
+      "make": "Other",
+      "gallery": [
+        "/uploads/img_2903.jpeg",
+        "/uploads/img_2904.jpeg",
+        "/uploads/img_2905.jpeg",
+        "/uploads/img_2906.jpeg",
+        "/uploads/img_2905.jpeg",
+        "/uploads/img_2907.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_2900.jpeg",
+      "title": "2003 Sea Doo Utopia",
+      "condition": "Pre-Owned",
+      "year": 2003
     }
   ]
 }
