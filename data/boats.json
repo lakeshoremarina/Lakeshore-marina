@@ -79,6 +79,29 @@
       "title": "2006 Smoker Craft Castaway",
       "condition": "Pre-Owned",
       "year": 2006
+    },
+    {
+      "engine": "25",
+      "price": 19995,
+      "make": "Harris",
+      "gallery": [
+        "/uploads/img_1728.jpeg",
+        "/uploads/img_1729.jpeg",
+        "/uploads/img_1730.jpeg",
+        "/uploads/img_1732.jpeg",
+        "/uploads/img_1736.jpeg",
+        "/uploads/img_1737.jpeg",
+        "/uploads/img_1740.jpeg",
+        "/uploads/img_1741.jpeg",
+        "/uploads/img_1742.jpeg",
+        "/uploads/img_1743.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_1727.jpeg",
+      "title": "2023 Harris Pontoon",
+      "condition": "Pre-Owned",
+      "description": "You are going to want to see this boat! Like new interior. This boat came from a low power lake. If you would like a larger motor than the 25hp we would be happy to upgrade you for an additional fee. ",
+      "year": 2023
     }
   ]
 }
