@@ -284,6 +284,31 @@
       "title": "2026 Bentley 223 Navigator",
       "condition": "New",
       "year": 2026
+    },
+    {
+      "price": 32000,
+      "model": "Yamaha AR190",
+      "make": "Other",
+      "gallery": [
+        "/uploads/img_5988.jpg",
+        "/uploads/img_5989.jpg",
+        "/uploads/img_5990.jpg",
+        "/uploads/img_5991.jpg",
+        "/uploads/img_5992.jpg",
+        "/uploads/img_5993.jpg",
+        "/uploads/img_5993.jpg",
+        "/uploads/img_5994.jpg",
+        "/uploads/img_5995.jpg",
+        "/uploads/img_5996.jpg",
+        "/uploads/img_5997.jpg",
+        "/uploads/img_5999.jpg",
+        "/uploads/img_6002.jpg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_6003.jpg",
+      "title": "2021 Yamaha AR190",
+      "condition": "Pre-Owned",
+      "year": 2021
     }
   ]
 }
