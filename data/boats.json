@@ -174,6 +174,26 @@
       "title": "2022 Yamaha SX210",
       "condition": "Pre-Owned",
       "year": 2022
+    },
+    {
+      "price": 7500,
+      "model": "JC Tritoon",
+      "make": "Other",
+      "gallery": [
+        "/uploads/img_2874.jpeg",
+        "/uploads/img_2872.jpeg",
+        "/uploads/img_2873.jpeg",
+        "/uploads/img_2875.jpeg",
+        "/uploads/img_2877.jpeg",
+        "/uploads/img_2878.jpeg",
+        "/uploads/img_2879.jpeg",
+        "/uploads/img_2880.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_2871.jpeg",
+      "title": "1998 JC Tritoon – NO trailer",
+      "condition": "Pre-Owned",
+      "year": 1998
     }
   ]
 }
