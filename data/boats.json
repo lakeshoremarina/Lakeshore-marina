@@ -102,6 +102,21 @@
       "condition": "Pre-Owned",
       "description": "You are going to want to see this boat! Like new interior. This boat came from a low power lake. If you would like a larger motor than the 25hp we would be happy to upgrade you for an additional fee. ",
       "year": 2023
+    },
+    {
+      "price": 10000,
+      "model": "Sea Doo Trixx",
+      "make": "Other",
+      "gallery": [
+        "/uploads/img_2910.jpeg",
+        "/uploads/img_2911.jpeg",
+        "/uploads/img_2912.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_2909.jpeg",
+      "title": "2019 Sea Doo Trixx Jet Skis",
+      "condition": "Pre-Owned",
+      "year": 2019
     }
   ]
 }
