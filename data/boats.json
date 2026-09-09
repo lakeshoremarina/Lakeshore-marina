@@ -194,6 +194,27 @@
       "title": "1998 JC Tritoon – NO trailer",
       "condition": "Pre-Owned",
       "year": 1998
+    },
+    {
+      "engine": "150",
+      "length": "22",
+      "price": 70495,
+      "model": "22 ULCS 3",
+      "make": "Trifecta",
+      "hours": "0",
+      "gallery": [
+        "/uploads/img_0528.jpeg",
+        "/uploads/img_0527.jpeg",
+        "/uploads/img_0526.jpeg",
+        "/uploads/img_0523.jpeg",
+        "/uploads/img_0525.jpeg",
+        "/uploads/img_0524.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_1852.jpeg",
+      "title": "2026 Trifecta 22 ULCS 3",
+      "condition": "New",
+      "year": 2026
     }
   ]
 }
