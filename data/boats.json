@@ -155,6 +155,25 @@
       "title": "2002 Sylvan Castaway",
       "condition": "Pre-Owned",
       "year": 2002
+    },
+    {
+      "price": 38000,
+      "model": "Yamaha SX210",
+      "make": "Other",
+      "gallery": [
+        "/uploads/img_2882.jpeg",
+        "/uploads/img_2883.jpeg",
+        "/uploads/img_2884.jpeg",
+        "/uploads/img_2885.jpeg",
+        "/uploads/img_2886.jpeg",
+        "/uploads/img_2888.jpeg",
+        "/uploads/img_2889.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_2881.jpeg",
+      "title": "2022 Yamaha SX210",
+      "condition": "Pre-Owned",
+      "year": 2022
     }
   ]
 }
