@@ -20,6 +20,24 @@
       "condition": "Pre-Owned",
       "description": "This lake ready Bentley was only used for one year and is ready to get back on the water. \nCome see it today!",
       "year": 2025
+    },
+    {
+      "status": "Available",
+      "title": "2007 Sea Ray",
+      "year": 2007,
+      "condition": "Pre-Owned",
+      "price": 8500,
+      "gallery": [
+        "/uploads/img_3043.jpeg",
+        "/uploads/img_3045.jpeg",
+        "/uploads/img_3046.jpeg",
+        "/uploads/img_3047.jpeg",
+        "/uploads/img_3048.jpeg",
+        "/uploads/img_3049.jpeg",
+        "/uploads/img_3050.jpeg",
+        "/uploads/img_3051.jpeg",
+        "/uploads/img_3052.jpeg"
+      ]
     }
   ]
 }
