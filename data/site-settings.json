@@ -20,15 +20,15 @@
     "facebook_handle": "@lakeshoregrandlake"
   },
   "hours": {
-    "monday": "9:00 AM – 5:00 PM",
     "tuesday": "9:00 AM – 5:00 PM",
+    "footer_weekdays": "Tues–Sat: 9:00 AM – 5:00 PM",
+    "monday": "Closed",
+    "sunday": "Closed",
+    "footer_sunday": "Closed",
     "wednesday": "9:00 AM – 5:00 PM",
-    "thursday": "9:00 AM – 5:00 PM",
-    "friday": "9:00 AM – 5:00 PM",
     "saturday": "9:00 AM – 5:00 PM",
-    "sunday": "12:00 PM – 3:00 PM",
-    "footer_weekdays": "Mon–Sat: 9:00 AM – 5:00 PM",
-    "footer_sunday": "Sunday: 12:00 PM – 3:00 PM"
+    "thursday": "9:00 AM – 5:00 PM",
+    "friday": "9:00 AM – 5:00 PM"
   },
   "rentals": {
     "full_day_price": "$275",
