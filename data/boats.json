@@ -309,6 +309,28 @@
       "title": "2021 Yamaha AR190",
       "condition": "Pre-Owned",
       "year": 2021
+    },
+    {
+      "engine": "350 hp",
+      "price": 99995,
+      "make": "Trifecta",
+      "hours": "0",
+      "gallery": [
+        "/uploads/img_3654.jpeg",
+        "/uploads/img_3655.jpeg",
+        "/uploads/img_3656.jpeg",
+        "/uploads/img_3657.jpeg",
+        "/uploads/img_3658.jpeg",
+        "/uploads/img_3659.jpeg",
+        "/uploads/img_3660.jpeg",
+        "/uploads/img_3661.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_3599.jpeg",
+      "title": "2026 Trifecta W/ 350hp",
+      "condition": "New",
+      "description": "Look no farther, your dream boat is here! Wireless charging in all seats, upgraded seats, 350 hp motor to scoot you across the lake and radio controls on the back perfect for jamming at Boaters Beach. Come see us today!!",
+      "year": 2026
     }
   ]
 }
