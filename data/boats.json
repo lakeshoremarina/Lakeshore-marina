@@ -238,6 +238,29 @@
       "title": "2026 Bentley 243 Navigator",
       "condition": "New",
       "year": 2026
+    },
+    {
+      "engine": "200",
+      "length": "22",
+      "price": 51499,
+      "model": "223 Navigator",
+      "make": "Bentley",
+      "hours": "56630",
+      "gallery": [
+        "/uploads/img_0521.jpeg",
+        "/uploads/img_0520.jpeg",
+        "/uploads/img_0519.jpeg",
+        "/uploads/img_0518.jpeg",
+        "/uploads/img_0517.jpeg",
+        "/uploads/img_0516.jpeg",
+        "/uploads/img_0515.jpeg",
+        "/uploads/img_0514.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/white-blue.jpeg",
+      "title": "2026 Bentley 223 Navigator",
+      "condition": "New",
+      "year": 2026
     }
   ]
 }
