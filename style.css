@@ -518,10 +518,27 @@ select, input, textarea { font-family: inherit; }
   color: var(--text);
   line-height: 1;
 }
+.rental-price .rental-price-value {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
 .rental-price span {
   font-size: 1rem;
   font-weight: 500;
   color: var(--text-muted);
+}
+.site-announcement {
+  background: var(--orange);
+  color: #fff;
+  text-align: center;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+.site-announcement p {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.45;
 }
 .rental-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; flex: 1; }
 .rental-features {

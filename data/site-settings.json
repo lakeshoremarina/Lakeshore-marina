@@ -1,0 +1,38 @@
+{
+  "announcement": {
+    "enabled": false,
+    "text": ""
+  },
+  "homepage": {
+    "hero_description": "Grand Lake's premier Bentley, Harris, Trifecta & Dockside dealer. New & used boats, pontoon rentals, full-service marina, and always the cheapest gas on the water.",
+    "rentals_heading": "Get Out on the Water Today",
+    "rentals_description": "No boat? No problem. Rent one of our pontoons and enjoy everything Grand Lake has to offer — fishing, cruising, tubing, or just soaking up the sun.",
+    "about_heading": "The Newest Dealership. The Most Experience.",
+    "about_paragraph_one": "Lakeshore Marina is the newest dealership on Grand Lake St. Marys — and we're here to do things right. We know boats, we know this lake, and we know how to take care of our customers.",
+    "about_paragraph_two": "Our mission is simple: help people get out on the water and enjoy their boating activities. We're here to be an asset to our customers — a marina you can count on. Stop by and say hi, grab some gas, and see for yourself why you want to be our customer."
+  },
+  "contact": {
+    "phone_display": "419-268-2280",
+    "phone_link": "4192682280",
+    "email": "lakeshoremarinagrandlake@gmail.com",
+    "address": "7001 Cottonwood Rd, Celina, OH 45822",
+    "facebook_url": "https://www.facebook.com/lakeshoregrandlake/",
+    "facebook_handle": "@lakeshoregrandlake"
+  },
+  "hours": {
+    "monday": "9:00 AM – 5:00 PM",
+    "tuesday": "9:00 AM – 5:00 PM",
+    "wednesday": "9:00 AM – 5:00 PM",
+    "thursday": "9:00 AM – 5:00 PM",
+    "friday": "9:00 AM – 5:00 PM",
+    "saturday": "9:00 AM – 5:00 PM",
+    "sunday": "12:00 PM – 3:00 PM",
+    "footer_weekdays": "Mon–Sat: 9:00 AM – 5:00 PM",
+    "footer_sunday": "Sunday: 12:00 PM – 3:00 PM"
+  },
+  "rentals": {
+    "full_day_price": "$275",
+    "overnight_price": "$350",
+    "tube_price": "$25"
+  }
+}

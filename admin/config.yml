@@ -10,6 +10,66 @@ display_url: "https://lakeshoremarina.org"
 logo_url: "/logos/marina-logo.png"
 
 collections:
+  - name: "website"
+    label: "Website Settings"
+    files:
+      - name: "site_settings"
+        label: "Website Settings"
+        file: "data/site-settings.json"
+        format: "json"
+        fields:
+          - label: "Homepage Announcement"
+            name: "announcement"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Show Announcement", name: "enabled", widget: "boolean", default: false, hint: "Turn this on to display an important message across the top of the homepage." }
+              - { label: "Announcement Message", name: "text", widget: "string", required: false, hint: "Example: Spring launch specials are available now. Call for details." }
+          - label: "Homepage Text"
+            name: "homepage"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Main Intro", name: "hero_description", widget: "text" }
+              - { label: "Rentals Heading", name: "rentals_heading", widget: "string" }
+              - { label: "Rentals Description", name: "rentals_description", widget: "text" }
+              - { label: "About Heading", name: "about_heading", widget: "string" }
+              - { label: "About Paragraph 1", name: "about_paragraph_one", widget: "text" }
+              - { label: "About Paragraph 2", name: "about_paragraph_two", widget: "text" }
+          - label: "Contact Information"
+            name: "contact"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Phone Number as Displayed", name: "phone_display", widget: "string", hint: "Example: 419-268-2280" }
+              - { label: "Phone Number for Click-to-Call", name: "phone_link", widget: "string", hint: "Numbers only. Example: 4192682280" }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Street Address", name: "address", widget: "string" }
+              - { label: "Facebook Page URL", name: "facebook_url", widget: "string" }
+              - { label: "Facebook Name", name: "facebook_handle", widget: "string", hint: "Example: @lakeshoregrandlake" }
+          - label: "Business Hours"
+            name: "hours"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Monday", name: "monday", widget: "string" }
+              - { label: "Tuesday", name: "tuesday", widget: "string" }
+              - { label: "Wednesday", name: "wednesday", widget: "string" }
+              - { label: "Thursday", name: "thursday", widget: "string" }
+              - { label: "Friday", name: "friday", widget: "string" }
+              - { label: "Saturday", name: "saturday", widget: "string" }
+              - { label: "Sunday", name: "sunday", widget: "string" }
+              - { label: "Footer Weekday Summary", name: "footer_weekdays", widget: "string", hint: "Example: Mon–Sat: 9:00 AM – 5:00 PM" }
+              - { label: "Footer Sunday Summary", name: "footer_sunday", widget: "string", hint: "Example: Sunday: 12:00 PM – 3:00 PM" }
+          - label: "Rental Prices"
+            name: "rentals"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Full Day Price", name: "full_day_price", widget: "string", hint: "Example: $275" }
+              - { label: "Overnight Price", name: "overnight_price", widget: "string", hint: "Example: $350" }
+              - { label: "Tube Rental Price", name: "tube_price", widget: "string", hint: "Example: $25" }
+
   - name: "inventory"
     label: "Boat Inventory"
     files:
