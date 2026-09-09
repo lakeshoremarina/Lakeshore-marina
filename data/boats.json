@@ -215,6 +215,29 @@
       "title": "2026 Trifecta 22 ULCS 3",
       "condition": "New",
       "year": 2026
+    },
+    {
+      "engine": "150",
+      "length": "24",
+      "price": 50499,
+      "model": "243 Navigator",
+      "make": "Bentley",
+      "hours": "0",
+      "gallery": [
+        "/uploads/img_0564.jpeg",
+        "/uploads/img_0557.jpeg",
+        "/uploads/img_0558.jpeg",
+        "/uploads/img_0559.jpeg",
+        "/uploads/img_0560.jpeg",
+        "/uploads/img_0561.jpeg",
+        "/uploads/img_0562.jpeg",
+        "/uploads/img_0563.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_0555.jpeg",
+      "title": "2026 Bentley 243 Navigator",
+      "condition": "New",
+      "year": 2026
     }
   ]
 }
