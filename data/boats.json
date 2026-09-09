@@ -61,6 +61,24 @@
       "title": "2021 Sylvan Mirage Fishing Edition with trailer",
       "condition": "Pre-Owned",
       "year": 2021
+    },
+    {
+      "engine": "115",
+      "length": "24",
+      "price": 8000,
+      "model": "Castaway",
+      "gallery": [
+        "/uploads/img_2917.jpeg",
+        "/uploads/img_2913.jpeg",
+        "/uploads/img_2916.jpeg",
+        "/uploads/img_2921.jpg",
+        "/uploads/img_2920.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_2919.jpeg",
+      "title": "2006 Smoker Craft Castaway",
+      "condition": "Pre-Owned",
+      "year": 2006
     }
   ]
 }
