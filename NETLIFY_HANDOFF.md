@@ -1,6 +1,6 @@
-# Lakeshore Marina Inventory and Media Manager Setup
+# Lakeshore Marina Website and Inventory Manager Setup
 
-The website includes a dealership-style inventory page at `/inventory.html` and a private content editor at `/admin/`.
+The website includes a dealership-style inventory page at `/inventory.html` and a private content editor at `/admin/`. The editor includes separate sections for **Website Settings** and **Boat Inventory**.
 
 ## Important
 
@@ -34,6 +34,15 @@ The inventory editor cannot save changes on a drag-and-drop Netlify deployment. 
 7. Press **Publish**. Netlify rebuilds the website automatically.
 
 Sold boats stay saved in the inventory data but are automatically hidden from the public page. They can be changed back to Available later or removed in the editor.
+
+## How the manager updates website information
+
+1. Open `/admin/` and sign in.
+2. Choose **Website Settings**, then **Website Settings**.
+3. Edit only the approved fields: homepage announcement, selected homepage text, contact details, business hours, or rental prices.
+4. Press **Publish**. Netlify rebuilds the website automatically, usually within a few minutes.
+
+The manager dashboard does not expose page layout, colors, navigation, code, form setup, integrations, or other design controls. Those changes should still be handled by the website designer.
 
 ## Customer inquiries
 

@@ -50,6 +50,11 @@
   </header>
 
   <main>
+    <aside class="site-announcement" id="site-announcement" hidden>
+      <div class="container">
+        <p id="site-announcement-text"></p>
+      </div>
+    </aside>
 
     <!-- HERO -->
     <section class="hero" id="hero">
@@ -75,7 +80,7 @@
           Your Home on<br>
           <span class="hero-accent">Grand Lake.</span>
         </h1>
-        <p class="hero-sub">Grand Lake's premier Bentley, Harris, Trifecta &amp; Dockside dealer. New &amp; used boats, pontoon rentals, full-service marina, and always the cheapest gas on the water.</p>
+        <p class="hero-sub" data-site-setting="homepage.hero_description">Grand Lake's premier Bentley, Harris, Trifecta &amp; Dockside dealer. New &amp; used boats, pontoon rentals, full-service marina, and always the cheapest gas on the water.</p>
         <div class="hero-ctas">
           <a href="inventory.html" class="btn btn-primary btn-lg">Shop Boats for Sale</a>
           <a href="#rentals" class="btn btn-ghost btn-lg">Rent a Pontoon</a>
@@ -215,8 +220,8 @@
       <div class="container">
         <div class="section-header">
           <p class="section-eyebrow">Pontoon Rentals</p>
-          <h2>Get Out on the Water Today</h2>
-          <p class="section-sub">No boat? No problem. Rent one of our pontoons and enjoy everything Grand Lake has to offer — fishing, cruising, tubing, or just soaking up the sun.</p>
+          <h2 data-site-setting="homepage.rentals_heading">Get Out on the Water Today</h2>
+          <p class="section-sub" data-site-setting="homepage.rentals_description">No boat? No problem. Rent one of our pontoons and enjoy everything Grand Lake has to offer — fishing, cruising, tubing, or just soaking up the sun.</p>
         </div>
         <div class="rentals-grid">
           <div class="rental-card">
@@ -224,7 +229,7 @@
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div class="rental-badge">Full Day</div>
-            <div class="rental-price">$275<span>/day + tax</span></div>
+            <div class="rental-price"><span class="rental-price-value" data-site-setting="rentals.full_day_price">$275</span><span>/day + tax</span></div>
             <p>A full day on Grand Lake. Perfect for family outings, fishing trips, or a relaxing cruise around Ohio's largest inland lake.</p>
             <ul class="rental-features">
               <li>&#10003; Full day on the water</li>
@@ -239,7 +244,7 @@
             <div class="rental-icon">
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             </div>
-            <div class="rental-price">$350<span>+ tax</span></div>
+            <div class="rental-price"><span class="rental-price-value" data-site-setting="rentals.overnight_price">$350</span><span>+ tax</span></div>
             <p>Take the evening on the water. Keep the pontoon overnight and return by 9AM the next morning — perfect for sunset cruises and evening entertaining.</p>
             <ul class="rental-features">
               <li>&#10003; Keep boat overnight</li>
@@ -254,7 +259,7 @@
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
             </div>
             <div class="rental-badge">Add-On</div>
-            <div class="rental-price">$25<span>tube rental</span></div>
+            <div class="rental-price"><span class="rental-price-value" data-site-setting="rentals.tube_price">$25</span><span>tube rental</span></div>
             <p>Add a tube to your pontoon rental and hit the waves. Available with any pontoon rental — just ask when you book.</p>
             <ul class="rental-features">
               <li>&#10003; Only with pontoon rental</li>
@@ -416,9 +421,9 @@
         <div class="about-layout">
           <div class="about-text">
             <p class="section-eyebrow">About Lakeshore Marina</p>
-            <h2>The Newest Dealership. The Most Experience.</h2>
-            <p>Lakeshore Marina is the newest dealership on Grand Lake St. Marys — and we're here to do things right. We know boats, we know this lake, and we know how to take care of our customers.</p>
-            <p>Our mission is simple: help people get out on the water and enjoy their boating activities. We're here to be an asset to our customers — a marina you can count on. Stop by and say hi, grab some gas, and see for yourself why you want to be our customer.</p>
+            <h2 data-site-setting="homepage.about_heading">The Newest Dealership. The Most Experience.</h2>
+            <p data-site-setting="homepage.about_paragraph_one">Lakeshore Marina is the newest dealership on Grand Lake St. Marys — and we're here to do things right. We know boats, we know this lake, and we know how to take care of our customers.</p>
+            <p data-site-setting="homepage.about_paragraph_two">Our mission is simple: help people get out on the water and enjoy their boating activities. We're here to be an asset to our customers — a marina you can count on. Stop by and say hi, grab some gas, and see for yourself why you want to be our customer.</p>
             <blockquote class="about-quote">
               &ldquo;Stop by while you're out enjoying the lake — see for yourself why you want to be our customer.&rdquo;
             </blockquote>

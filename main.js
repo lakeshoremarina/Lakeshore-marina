@@ -2,6 +2,78 @@
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
+// Manager-controlled website settings
+function getSetting(settings, path) {
+  return path.split('.').reduce((value, key) => value && value[key], settings);
+}
+
+function applySiteSettings(settings) {
+  document.querySelectorAll('[data-site-setting]').forEach((element) => {
+    const value = getSetting(settings, element.dataset.siteSetting);
+    if (typeof value === 'string' && value.trim()) element.textContent = value;
+  });
+
+  const announcement = document.getElementById('site-announcement');
+  const announcementText = document.getElementById('site-announcement-text');
+  if (announcement && announcementText && settings.announcement?.enabled && settings.announcement.text?.trim()) {
+    announcementText.textContent = settings.announcement.text;
+    announcement.hidden = false;
+  }
+
+  const contact = settings.contact || {};
+  if (contact.phone_display && contact.phone_link) {
+    document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+      link.href = `tel:${contact.phone_link.replace(/\D/g, '')}`;
+      if (/^Call Us:/.test(link.textContent.trim())) link.textContent = `Call Us: ${contact.phone_display}`;
+      else if (/^Call /.test(link.textContent.trim())) link.textContent = `Call ${contact.phone_display}`;
+      else if (/^\d/.test(link.textContent.trim())) link.textContent = contact.phone_display;
+    });
+  }
+  if (contact.email) {
+    document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+      link.href = `mailto:${contact.email}`;
+      link.textContent = contact.email;
+    });
+  }
+  if (contact.address) {
+    const mapsUrl = `https://maps.google.com/?q=${encodeURIComponent(contact.address)}`;
+    document.querySelectorAll('a[href*="maps.google.com"]').forEach((link) => {
+      link.href = mapsUrl;
+      link.textContent = contact.address;
+    });
+  }
+  if (contact.facebook_url) {
+    document.querySelectorAll('a[href*="facebook.com/lakeshoregrandlake"]').forEach((link) => {
+      link.href = contact.facebook_url;
+      if (link.classList.contains('info-value') && contact.facebook_handle) {
+        link.textContent = contact.facebook_handle;
+      }
+      const reachValue = link.querySelector('.reach-val');
+      if (reachValue && contact.facebook_handle) reachValue.textContent = contact.facebook_handle;
+    });
+  }
+
+  const hours = settings.hours || {};
+  document.querySelectorAll('.hours-row').forEach((row) => {
+    const day = row.querySelector('.hours-day')?.textContent.trim().toLowerCase();
+    const time = row.querySelector('.hours-time');
+    if (day && time && hours[day]) time.textContent = hours[day];
+  });
+  document.querySelectorAll('.footer-hours').forEach((list) => {
+    const items = list.querySelectorAll('li');
+    if (items[0] && hours.footer_weekdays) items[0].textContent = hours.footer_weekdays;
+    if (items[1] && hours.footer_sunday) items[1].textContent = hours.footer_sunday;
+  });
+}
+
+fetch('data/site-settings.json', { cache: 'no-store' })
+  .then((response) => {
+    if (!response.ok) throw new Error('Website settings could not be loaded.');
+    return response.json();
+  })
+  .then(applySiteSettings)
+  .catch((error) => console.warn(error.message));
+
 // Header scroll
 const header = document.getElementById('site-header');
 if (header) {
