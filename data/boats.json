@@ -135,6 +135,26 @@
       "title": "2003 Sea Doo Utopia",
       "condition": "Pre-Owned",
       "year": 2003
+    },
+    {
+      "price": 8500,
+      "model": "Sylvan Castaway",
+      "make": "Other",
+      "gallery": [
+        "/uploads/img_2891.jpeg",
+        "/uploads/img_2892.jpeg",
+        "/uploads/img_2893.jpeg",
+        "/uploads/img_2894.jpeg",
+        "/uploads/img_2895.jpeg",
+        "/uploads/img_2896.jpeg",
+        "/uploads/img_2897.jpeg",
+        "/uploads/img_2898.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_2890.jpeg",
+      "title": "2002 Sylvan Castaway",
+      "condition": "Pre-Owned",
+      "year": 2002
     }
   ]
 }
