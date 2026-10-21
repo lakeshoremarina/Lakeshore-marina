@@ -392,6 +392,35 @@
       "title": "2027 Harris 230 Sunliner",
       "condition": "New",
       "year": 2027
+    },
+    {
+      "engine": "150",
+      "length": "22",
+      "price": 73116,
+      "model": "Elite",
+      "make": "Bentley",
+      "gallery": [
+        "/uploads/img_4450.jpeg",
+        "/uploads/img_4451.jpeg",
+        "/uploads/img_4452.jpeg",
+        "/uploads/img_4453.jpeg",
+        "/uploads/img_4454.jpeg",
+        "/uploads/img_4457.jpeg",
+        "/uploads/img_4458.jpeg",
+        "/uploads/img_4459.jpeg",
+        "/uploads/img_4460.jpeg",
+        "/uploads/img_4461.jpeg",
+        "/uploads/img_4462.jpeg",
+        "/uploads/img_4464.jpeg",
+        "/uploads/img_4465.jpeg",
+        "/uploads/img_4466.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_4448.jpeg",
+      "title": "2027 Bentley  223 Elite Swingback",
+      "condition": "New",
+      "description": "This Bentley is priced with a 150 Suzuki but it can have up to a 250 hp Suzuki",
+      "year": 2027
     }
   ]
 }
