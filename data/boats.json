@@ -364,6 +364,34 @@
       "title": "2027 Harris 210 Sunliner",
       "condition": "New",
       "year": 2027
+    },
+    {
+      "engine": "200",
+      "length": "23",
+      "price": 89995,
+      "model": "230 Sunliner",
+      "make": "Harris",
+      "gallery": [
+        "/uploads/img_4487.jpeg",
+        "/uploads/img_4488.jpeg",
+        "/uploads/img_4489.jpeg",
+        "/uploads/img_4490.jpeg",
+        "/uploads/img_4491.jpeg",
+        "/uploads/img_4492.jpeg",
+        "/uploads/img_4493.jpeg",
+        "/uploads/img_4494.jpeg",
+        "/uploads/img_4495.jpeg",
+        "/uploads/img_4496.jpeg",
+        "/uploads/img_4497.jpeg",
+        "/uploads/img_4498.jpeg",
+        "/uploads/img_4499.jpeg",
+        "/uploads/img_4500.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_4486.jpeg",
+      "title": "2027 Harris 230 Sunliner",
+      "condition": "New",
+      "year": 2027
     }
   ]
 }
