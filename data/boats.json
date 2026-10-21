@@ -331,6 +331,39 @@
       "condition": "New",
       "description": "Look no farther, your dream boat is here! Wireless charging in all seats, upgraded seats, 350 hp motor to scoot you across the lake and radio controls on the back perfect for jamming at Boaters Beach. Come see us today!!",
       "year": 2026
+    },
+    {
+      "engine": "150",
+      "length": "21",
+      "price": 74500,
+      "model": "210 Sunliner",
+      "make": "Harris",
+      "gallery": [
+        "/uploads/img_4467.jpeg",
+        "/uploads/img_4471.jpeg",
+        "/uploads/img_4472.jpeg",
+        "/uploads/img_4473.jpeg",
+        "/uploads/img_4474.jpeg",
+        "/uploads/img_4475.jpeg",
+        "/uploads/img_4476.jpeg",
+        "/uploads/img_4477.jpeg",
+        "/uploads/img_4478.jpeg",
+        "/uploads/img_4479.jpeg",
+        "/uploads/img_4480.jpeg",
+        "/uploads/img_4481.jpeg",
+        "/uploads/img_4482.jpeg",
+        "/uploads/img_4483.jpeg",
+        "/uploads/img_4484.jpeg",
+        "/uploads/img_4485.jpeg",
+        "/uploads/img_4499.jpeg",
+        "/uploads/img_4469.jpeg",
+        "/uploads/img_4470.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_4468.jpeg",
+      "title": "2027 Harris 210 Sunliner",
+      "condition": "New",
+      "year": 2027
     }
   ]
 }
