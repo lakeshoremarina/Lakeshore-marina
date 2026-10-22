@@ -1,6 +1,69 @@
 {
   "boats": [
     {
+      "engine": "150 Mercury",
+      "length": "20' 6\"",
+      "model": "A20L-1",
+      "gallery": [
+        "/uploads/img_4504.jpeg",
+        "/uploads/img_4505.jpeg",
+        "/uploads/img_4507.jpeg",
+        "/uploads/img_4508.jpeg",
+        "/uploads/img_4509.jpeg",
+        "/uploads/img_4510.jpeg",
+        "/uploads/img_4511.jpeg",
+        "/uploads/img_4512.jpeg",
+        "/uploads/img_4513.jpeg",
+        "/uploads/img_4515.jpeg",
+        "/uploads/img_4517.jpeg",
+        "/uploads/img_4518.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_4503.jpeg",
+      "title": "2027 Alera A20L-1",
+      "condition": "New",
+      "description": "One piece composite decking\nBow and aft see through door\nUSB/ USC Helm Charging\nWetsound Audio Package\nRGB Furniture base light package\nPower bimini top with locking arms\nHigh Back Captains seat\nTilt Steering",
+      "year": 2027
+    },
+    {
+      "engine": "350 Mercury",
+      "length": "25' 6\"",
+      "model": "M23LA-1",
+      "gallery": [
+        "/uploads/img_4520.jpeg",
+        "/uploads/img_4521.jpeg",
+        "/uploads/img_4522.jpeg",
+        "/uploads/img_4523.jpeg",
+        "/uploads/img_4524.jpeg",
+        "/uploads/img_4525.jpeg",
+        "/uploads/img_4526.jpeg",
+        "/uploads/img_4527.jpeg",
+        "/uploads/img_4528.jpeg",
+        "/uploads/img_4529.jpeg",
+        "/uploads/img_4530.jpeg",
+        "/uploads/img_4531.jpeg",
+        "/uploads/img_4532.jpeg",
+        "/uploads/img_4533.jpeg",
+        "/uploads/img_4534.jpeg",
+        "/uploads/img_4535.jpeg",
+        "/uploads/img_4536.jpeg",
+        "/uploads/img_4537.jpeg",
+        "/uploads/img_4538.jpeg",
+        "/uploads/img_4539.jpeg",
+        "/uploads/img_4540.jpeg",
+        "/uploads/img_4541.jpeg",
+        "/uploads/img_4542.jpeg",
+        "/uploads/img_4543.jpeg",
+        "/uploads/img_4544.jpeg"
+      ],
+      "status": "Available",
+      "cover_image": "/uploads/img_4519.jpeg",
+      "title": "2027 Alera Arch M23LA-1",
+      "condition": "New",
+      "description": "One piece composite decking\nPull up cleats \nBow and Aft see through door\nIntegrated trash can and lockable storage\nTilt Steering \nDual Battery storage with automatic helm relay for battery disconnect\nEnclosed subwoofer\nUSB-C Charging ports integrated into furniture\nQuick clip mooring cover\nSpectre Arch w/ power Bimini \nSki tow bar with integrated fuel fill \nFriction hinge doors with stainless latches\n12\" ultra wide Simrad display\nWireless charging pad in helm storage \n3 Amplifiers\n2 Aft speakers \n70 Gallon fuel tank \nAutomatic navigation and anchor light sensor\nRoswell audio upgrade (8 speakers)\nRGB interior light package \nDual furniture armrests\nextra wide quick deploy swim ladder",
+      "year": 2027
+    },
+    {
       "engine": "150",
       "length": "22",
       "price": 73116,
@@ -421,31 +484,6 @@
       "title": "2021 Yamaha AR190",
       "condition": "Pre-Owned",
       "year": 2021
-    },
-    {
-      "engine": "150 Mercury",
-      "length": "20' 6\"",
-      "model": "A",
-      "gallery": [
-        "/uploads/img_4504.jpeg",
-        "/uploads/img_4505.jpeg",
-        "/uploads/img_4507.jpeg",
-        "/uploads/img_4508.jpeg",
-        "/uploads/img_4509.jpeg",
-        "/uploads/img_4510.jpeg",
-        "/uploads/img_4511.jpeg",
-        "/uploads/img_4512.jpeg",
-        "/uploads/img_4513.jpeg",
-        "/uploads/img_4515.jpeg",
-        "/uploads/img_4517.jpeg",
-        "/uploads/img_4518.jpeg"
-      ],
-      "status": "Available",
-      "cover_image": "/uploads/img_4503.jpeg",
-      "title": "2027 Alera A20L-1",
-      "condition": "New",
-      "description": "One piece composite decking\nBow and aft see through door\nUSB/ USC Helm Charging\nWetsound Audio Package\nRGB Furniture base light package\nPower bimini top with locking arms\nHigh Back Captains seat\nTilt Steering",
-      "year": 2027
     }
   ]
 }
